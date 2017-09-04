@@ -1176,7 +1176,7 @@ var pushToGithubSync = function() {
   // git push
   var stdout = "";
   stdout += "> git add *\n";
-  stdout += '> git commit -m "Made some changes to ChiliPeppr myWorkspace using Cloud9"\n';
+  stdout += '> git commit -m "Made some changes to ChiliPeppr myWorkspace via Script"\n';
   stdout += "> git push\n";
   stdout += proc.execSync('git add *; git commit -m "Made some changes to ChiliPeppr myWorkspace using Cloud9"; git push;', { encoding: 'utf8' });
   console.log("Pushed to github sync. Stdout:", stdout);
